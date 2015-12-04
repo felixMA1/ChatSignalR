@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootbox.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="Scripts/chatJS.js"></script>
+    <style>
+        #chat {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        #titulo {
+            height: 10%;
+            text-align: center;
+        }
+        #usuarios {
+            float: left;
+            width: 30%;
+            text-align: center;
+            min-height: 500px;
+            border: 1px solid;
+        }
+        #usuarios li {
+            list-style: none;
+        }
+        #mensajes {
+            float: right;
+            width: 70%;
+            min-height: 500px;
+            border: 1px solid
+        }
+        #barraMensajes {
+            clear: both;
+        }
+        #txtMen {
+            width: 91%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="chat">
+    <div id="titulo">
+        Super chat 1.0
+    </div>
+    <div id="usuarios">
+        <ul id="conectados"></ul>
+    </div>
+    <div id="mensajes"></div>
+    <div id="barraMensajes">
+        <input type="text" id="txtMen" class="form-control"/>
+        <button type="button" id="btnEnv" class="btn btn-default">Enviar</button>
+    </div>
+</div>
+</body>
+</html>
